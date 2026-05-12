@@ -1,0 +1,3 @@
+-- PostgreSQL schema is managed by EF Core migration 202605110001_InitialCreate.
+-- Run: dotnet ef database update --project backend/SponsorshipApproval.Api
+-- Demo users are seeded at application startup with password Password123!.
