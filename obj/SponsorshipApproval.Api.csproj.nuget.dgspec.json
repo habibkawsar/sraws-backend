@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/habibkawsar/SRAWS/backend/SponsorshipApproval.Api/SponsorshipApproval.Api.csproj": {}
+    "/Users/habibkawsar/SRAWS/sraws-backend/SponsorshipApproval.Api.csproj": {}
   },
   "projects": {
-    "/Users/habibkawsar/SRAWS/backend/SponsorshipApproval.Api/SponsorshipApproval.Api.csproj": {
+    "/Users/habibkawsar/SRAWS/sraws-backend/SponsorshipApproval.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/habibkawsar/SRAWS/backend/SponsorshipApproval.Api/SponsorshipApproval.Api.csproj",
+        "projectUniqueName": "/Users/habibkawsar/SRAWS/sraws-backend/SponsorshipApproval.Api.csproj",
         "projectName": "SponsorshipApproval.Api",
-        "projectPath": "/Users/habibkawsar/SRAWS/backend/SponsorshipApproval.Api/SponsorshipApproval.Api.csproj",
+        "projectPath": "/Users/habibkawsar/SRAWS/sraws-backend/SponsorshipApproval.Api.csproj",
         "packagesPath": "/Users/habibkawsar/.nuget/packages/",
-        "outputPath": "/Users/habibkawsar/SRAWS/backend/SponsorshipApproval.Api/obj/",
+        "outputPath": "/Users/habibkawsar/SRAWS/sraws-backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/habibkawsar/.nuget/NuGet/NuGet.Config"
