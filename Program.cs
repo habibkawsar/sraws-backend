@@ -118,14 +118,8 @@ app.UseSwaggerUI();
 app.UseHttpsRedirection();
 app.UseCors("AllowFrontend");
 app.UseAuthentication();
-app.Use(async (ctx, next) =>
-{
-    Console.WriteLine("AUTH HEADER: " + ctx.Request.Headers.Authorization);
-    Console.WriteLine("USER AUTH: " + ctx.User.Identity?.IsAuthenticated);
-
-    await next();
-});
 app.UseAuthorization();
+
 app.MapControllers();
 // when development uncomment bellow line
 // app.Run();
