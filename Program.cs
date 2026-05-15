@@ -56,16 +56,19 @@ builder.Services.AddSingleton<IJwtTokenService, JwtTokenService>();
 
 var allowedOrigins = builder.Configuration
     .GetSection("AllowedOrigins")
-    .Get<string[]>() ?? new[] { "https://sraws-frontend.vercel.app" };
+    .Get<string[]>() ?? new[]
+    {
+        "https://sraws-frontend.vercel.app"
+    };
 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("allowedOrigins")
-              .AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials();
+        policy
+            .WithOrigins("allowedOrigins")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
     });
 });
 
