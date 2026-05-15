@@ -115,14 +115,12 @@ await DbInitializer.InitializeAsync(app.Services);
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseSwagger();
 app.UseSwaggerUI();
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 app.UseCors("AllowFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-// when development uncomment bellow line
-// app.Run();
+
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-// Console.WriteLine($"JWT KEY LENGTH: {jwtKey?.Length}");
 app.Run($"http://0.0.0.0:{port}");
