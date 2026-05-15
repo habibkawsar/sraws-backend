@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SponsorshipApproval.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9f09bfafddd354e7d3bae4e5e9567700489418e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d37c9deb1bc4a1b6ee37437f39803c442bdeab5")]
 [assembly: System.Reflection.AssemblyProductAttribute("SponsorshipApproval.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SponsorshipApproval.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

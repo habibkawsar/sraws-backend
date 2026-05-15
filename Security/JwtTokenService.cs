@@ -12,8 +12,11 @@ public sealed class JwtTokenService(IConfiguration configuration) : IJwtTokenSer
     public (string Token, DateTime ExpiresAtUtc) CreateToken(User user)
     {
         var key = configuration["Jwt:Key"] ?? throw new InvalidOperationException("Jwt:Key is not configured.");
-        var issuer = configuration["Jwt:Issuer"] ?? "SponsorshipApproval.Api";
-        var audience = configuration["Jwt:Audience"] ?? "SponsorshipApproval.Client";
+        var issuer = configuration["Jwt:Issuer"]
+            ?? throw new InvalidOperationException("Jwt:Issuer missing");
+
+        var audience = configuration["Jwt:Audience"]
+            ?? throw new InvalidOperationException("Jwt:Audience missing");
         var expiresMinutes = configuration.GetValue("Jwt:ExpiresMinutes", 120);
         var expiresAt = DateTime.UtcNow.AddMinutes(expiresMinutes);
 
@@ -26,6 +29,7 @@ public sealed class JwtTokenService(IConfiguration configuration) : IJwtTokenSer
             new(ClaimTypes.Email, user.Email),
             new(ClaimTypes.Role, user.Role.Name),
             new("department", user.Department)
+
         };
 
         var credentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)), SecurityAlgorithms.HmacSha256);
