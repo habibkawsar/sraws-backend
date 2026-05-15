@@ -120,3 +120,9 @@
 /Users/habibkawsar/SRAWS/sraws-backend/obj/Release/net8.0/SponsorshipApproval.Api.pdb
 /Users/habibkawsar/SRAWS/sraws-backend/obj/Release/net8.0/SponsorshipApproval.Api.genruntimeconfig.cache
 /Users/habibkawsar/SRAWS/sraws-backend/obj/Release/net8.0/ref/SponsorshipApproval.Api.dll
+/Users/habibkawsar/SRAWS/sraws-backend/bin/Release/net8.0/publish/web.config
+/Users/habibkawsar/SRAWS/sraws-backend/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/habibkawsar/SRAWS/sraws-backend/bin/Release/net8.0/publish/appsettings.json
+/Users/habibkawsar/SRAWS/sraws-backend/bin/Release/net8.0/publish/SponsorshipApproval.Api.deps.json
+/Users/habibkawsar/SRAWS/sraws-backend/bin/Release/net8.0/publish/SponsorshipApproval.Api.runtimeconfig.json
+/Users/habibkawsar/SRAWS/sraws-backend/bin/Release/net8.0/publish/SponsorshipApproval.Api.staticwebassets.endpoints.json
